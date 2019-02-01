@@ -8,7 +8,7 @@ here = path.abspath(path.dirname(__file__))
 requires = open('requirements.txt').read().strip().split('\n')
 
 # Get the long description from the README file
-with open(path.join(here, 'README.md'), encoding='utf-8') as f:
+with open(path.join(here, 'README.md'), mode='r') as f:
     long_description = f.read()
 
 short_description = (
